@@ -1,5 +1,6 @@
-public class CH{
-    public static void main(String[]args){
+
+public class Ch {
+    public static void main(String[] args) {
         System.out.println("helllooooooooo");
     }
 }
