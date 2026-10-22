@@ -4,7 +4,7 @@ on:
   push:
     branches: ["master"]
   pull_request:
-      branches: ["master"]
+    branches: ["master"]
   workflow_dispatch:
 
 jobs:
@@ -12,15 +12,14 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: checkout repository
-        uses: actions/checkourt@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
-          
 
       - name: Compile Java Program
         run: javac Ch.java
